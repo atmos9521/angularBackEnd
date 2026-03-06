@@ -1,0 +1,13 @@
+#VS Code 擴充套件：搜尋並安裝 "C# Dev Kit"。這會自動幫你安裝 C# 語言支援、除錯工具與專案管理器。
+
+# 建立 Web API 專案 (使用最精簡的範本)MyApi為名稱
+dotnet new webapi -n AngularApi --use-program-main false
+
+#安裝 MSSQL 連線套件
+在終端機輸入以下指令，讓你的專案具備連線 SQL Server 的能力：
+cd AngularApi
+dotnet add package Microsoft.Data.SqlClient
+
+#起server:(在有csproj那裏執行)
+dotnet watch
+launchSettings.json改監聽port
