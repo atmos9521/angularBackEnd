@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\willy_test_case\\MyBackend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E4CAF460-8899-4468-04E2-ECC9353F5025}|AngularApi\\AngularApi.csproj|d:\\willy_test_case\\mybackend\\angularapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4CAF460-8899-4468-04E2-ECC9353F5025}|AngularApi\\AngularApi.csproj|solutionrelative:angularapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4CAF460-8899-4468-04E2-ECC9353F5025}|AngularApi\\AngularApi.csproj|d:\\willy_test_case\\mybackend\\angularapi\\mylogicservice_group\\home\\header_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4CAF460-8899-4468-04E2-ECC9353F5025}|AngularApi\\AngularApi.csproj|solutionrelative:angularapi\\mylogicservice_group\\home\\header_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4CAF460-8899-4468-04E2-ECC9353F5025}|AngularApi\\AngularApi.csproj|d:\\willy_test_case\\mybackend\\angularapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E4CAF460-8899-4468-04E2-ECC9353F5025}|AngularApi\\AngularApi.csproj|solutionrelative:angularapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 289,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\willy_test_case\\MyBackend\\AngularApi\\appsettings.json",
+              "RelativeDocumentMoniker": "AngularApi\\appsettings.json",
+              "ToolTip": "D:\\willy_test_case\\MyBackend\\AngularApi\\appsettings.json",
+              "RelativeToolTip": "AngularApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-09T02:45:08.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "header_class.cs",
+              "DocumentMoniker": "D:\\willy_test_case\\MyBackend\\AngularApi\\MylogicService_group\\home\\header_class.cs",
+              "RelativeDocumentMoniker": "AngularApi\\MylogicService_group\\home\\header_class.cs",
+              "ToolTip": "D:\\willy_test_case\\MyBackend\\AngularApi\\MylogicService_group\\home\\header_class.cs",
+              "RelativeToolTip": "AngularApi\\MylogicService_group\\home\\header_class.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAIAwwBEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T02:28:23.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\willy_test_case\\MyBackend\\AngularApi\\Program.cs",
+              "RelativeDocumentMoniker": "AngularApi\\Program.cs",
+              "ToolTip": "D:\\willy_test_case\\MyBackend\\AngularApi\\Program.cs",
+              "RelativeToolTip": "AngularApi\\Program.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T02:20:29.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 261,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cdbdee54-b399-484b-b763-db2c3393d646}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

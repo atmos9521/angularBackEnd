@@ -7,12 +7,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="MylogicService_group\home\header\**" />
+    <Compile Remove="MylogicService_group\home\leftMenu\**" />
+    <Content Remove="MylogicService_group\home\header\**" />
+    <Content Remove="MylogicService_group\home\leftMenu\**" />
+    <EmbeddedResource Remove="MylogicService_group\home\header\**" />
+    <EmbeddedResource Remove="MylogicService_group\home\leftMenu\**" />
+    <None Remove="MylogicService_group\home\header\**" />
+    <None Remove="MylogicService_group\home\leftMenu\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.10" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.4" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="MylogicService_group\" />
+    <Folder Include="MylogicService_group\error\" />
+    <Folder Include="MylogicService_group\users\" />
   </ItemGroup>
 
 </Project>

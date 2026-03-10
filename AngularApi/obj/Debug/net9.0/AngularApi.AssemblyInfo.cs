@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AngularApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14f7eff6647f23596c3edf13f0e4d3b9a43ba263")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6cb6076711fb32108cbc11159e63171e1b12a671")]
 [assembly: System.Reflection.AssemblyProductAttribute("AngularApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AngularApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

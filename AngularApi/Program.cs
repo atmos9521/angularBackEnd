@@ -1,8 +1,10 @@
 using AngularApi.MylogicService_group;
+using AngularApi.MylogicService_group.home;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 // --- 1. 服務註冊區 (Services Configuration) ---
 // 註冊 CORS
@@ -16,7 +18,7 @@ builder.Services.Configure<MySettings>(builder.Configuration.GetSection("MySetti
 
 // 註冊你的自定義 Service (這樣 MySample1 才能注入)
 builder.Services.AddScoped<MyLogicService>();
-
+builder.Services.AddScoped<header_class>();
 var app = builder.Build();
 
 // --- 2. 中間層設定區 (Middleware) ---
@@ -56,6 +58,14 @@ app.MapGet("/api/MySample1", (MyLogicService myService) =>
     return Results.Ok(new { message = result });
 });
 
+app.MapPost("/api/headMenu", (header_class headerService) =>
+{
+    var result = headerService.header_MenuAsync();
+    return Results.Ok(new { message = result });
+});
+
+//// 需要前端參數
+//app.MapPost("/api/headMenu", (header_class headerService, MyRequestModel request) => { ... });
 app.Run();
 
 // --- 4. 類別定義 (放在檔案最下方) ---
