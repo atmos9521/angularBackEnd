@@ -1,5 +1,7 @@
+using System.ComponentModel;
 using AngularApi.MylogicService_group;
 using AngularApi.MylogicService_group.home;
+using AngularApi.MylogicService_group.users.Album.album_upload;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Options;
 
@@ -15,10 +17,12 @@ builder.Services.AddCors(options =>
 
 // 註冊 MySettings (一定要在這裡註冊，MapGet 才能用)
 builder.Services.Configure<MySettings>(builder.Configuration.GetSection("MySettings"));
+builder.Services.Configure<FileControl>(builder.Configuration.GetSection("FileControl"));
 
 // 註冊你的自定義 Service (這樣 MySample1 才能注入)
 builder.Services.AddScoped<MyLogicService>();
 builder.Services.AddScoped<header_class>();
+builder.Services.AddScoped<album_upload>();
 var app = builder.Build();
 
 // --- 2. 中間層設定區 (Middleware) ---
@@ -58,10 +62,31 @@ app.MapGet("/api/MySample1", (MyLogicService myService) =>
     return Results.Ok(new { message = result });
 });
 
+// Menu表單
 app.MapPost("/api/headMenu", (header_class headerService) =>
 {
     var result = headerService.header_MenuAsync();
     return Results.Ok(new { message = result });
+});
+
+// 照片上傳
+app.MapPost("/api/fileUpload", async (HttpRequest request, IConfiguration config, IOptions<FileControl> SettingsBindableAttribute, album_upload albumService) =>
+{
+    var form = await request.ReadFormAsync();
+    string functionName = form["func"].ToString();
+
+    switch (functionName)
+    {
+        case "AlbumUpload":
+            var result_AlbumUpload = albumService.UploadFile(request);
+            return Results.Ok(new { message = result_AlbumUpload });
+        case "AlbumMultipleUpload":
+            var result_AlbumMultipleUpload = albumService.uploadMultipleFiles(request);
+            return Results.Ok(new { message = result_AlbumMultipleUpload });
+        default:
+            return Results.BadRequest(new { message = "無此功能" });
+    }
+
 });
 
 //// 需要前端參數
@@ -74,4 +99,9 @@ public class MySettings
     public string SystemName { get; set; } = string.Empty;
     public string AdminEmail { get; set; } = string.Empty;
     public int MaxRetryAttempts { get; set; }
+}
+
+public class FileControl
+{
+    public string AlbumUploadRootPath { get; set; } = string.Empty;
 }

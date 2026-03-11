@@ -25,6 +25,9 @@
   <ItemGroup>
     <Folder Include="MylogicService_group\error\" />
     <Folder Include="MylogicService_group\users\" />
+    <Folder Include="MylogicService_group\users\Album\" />
+    <Folder Include="MylogicService_group\users\Album\album-upload\" />
+    <Folder Include="MylogicService_group\users\Album\show-albums\" />
   </ItemGroup>
 
 </Project>

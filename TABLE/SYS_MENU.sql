@@ -15,7 +15,8 @@ CREATE TABLE Sys_Menus (
 -- 插入父層選單
 INSERT INTO Sys_Menus (Label, Icon, RouterLink, Sort_Order) VALUES (N'Home', N'pi pi-home', '/home', 1);
 INSERT INTO Sys_Menus (Label, Icon, RouterLink, Sort_Order) VALUES (N'坂道', N'pi pi-search', NULL, 2);
-INSERT INTO Sys_Menus (Label, Icon, RouterLink, Sort_Order) VALUES (N'關於', N'pi pi-search', NULL, 3);
+INSERT INTO Sys_Menus (Label, Icon, RouterLink, Sort_Order) VALUES (N'相簿管理', N'pi pi-folder', NULL, 3);
+INSERT INTO Sys_Menus (Label, Icon, RouterLink, Sort_Order) VALUES (N'關於', N'pi pi-search', NULL, 99);
 
 -- 插入 Projects 的子選單 (假設 Projects 的 Menu_Id 是 2)
 INSERT INTO Sys_Menus (Parent_Id, Label, Icon, RouterLink, Sort_Order) VALUES (2, N'乃木坂', N'pi pi-palette', ''   , 1);
