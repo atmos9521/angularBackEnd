@@ -23,15 +23,16 @@ namespace AngularApi.MylogicService_group.home
                 {
                     await conn.OpenAsync();
                     StringBuilder sql = new StringBuilder();
-                    sql.AppendLine("SELECT");
-                    sql.AppendLine(" Menu_Id");
-                    sql.AppendLine(",Parent_Id");
-                    sql.AppendLine(",Label");
-                    sql.AppendLine(",Icon");
-                    sql.AppendLine(",RouterLink");
-                    sql.AppendLine(",Sort_Order");
-                    sql.AppendLine("FROM Sys_Menus");
+                    sql.AppendLine("SELECT               ");
+                    sql.AppendLine(" Menu_Id             ");
+                    sql.AppendLine(",Parent_Id           ");
+                    sql.AppendLine(",Label               ");
+                    sql.AppendLine(",Icon                ");
+                    sql.AppendLine(",RouterLink          ");
+                    sql.AppendLine(",Sort_Order          ");
+                    sql.AppendLine("FROM Sys_Menus       ");
                     sql.AppendLine("WHERE Is_Active = 'Y'");
+                    sql.AppendLine("ORDER BY Sort_Order  ");
 
                     using (var cmd = new SqlCommand(sql.ToString(), conn))
                     {

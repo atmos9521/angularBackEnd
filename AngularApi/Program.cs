@@ -2,6 +2,7 @@ using System.ComponentModel;
 using AngularApi.MylogicService_group;
 using AngularApi.MylogicService_group.home;
 using AngularApi.MylogicService_group.users.Album.album_upload;
+using AngularApi.MylogicService_group.users.Album.show_albums;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Options;
 
@@ -23,6 +24,7 @@ builder.Services.Configure<FileControl>(builder.Configuration.GetSection("FileCo
 builder.Services.AddScoped<MyLogicService>();
 builder.Services.AddScoped<header_class>();
 builder.Services.AddScoped<album_upload>();
+builder.Services.AddScoped<show_albums>();
 var app = builder.Build();
 
 // --- 2. 中間層設定區 (Middleware) ---
@@ -66,6 +68,13 @@ app.MapGet("/api/MySample1", (MyLogicService myService) =>
 app.MapPost("/api/headMenu", (header_class headerService) =>
 {
     var result = headerService.header_MenuAsync();
+    return Results.Ok(new { message = result });
+});
+
+// 相簿群組表單
+app.MapPost("/api/albumGroup", (show_albums albumsService) =>
+{
+    var result = albumsService.album_Group();
     return Results.Ok(new { message = result });
 });
 
